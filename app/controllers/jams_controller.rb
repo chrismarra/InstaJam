@@ -44,7 +44,7 @@ class JamsController < ApplicationController
 
     respond_to do |format|
       if @jam.save
-        format.html { redirect_to @jam, notice: 'Jam was successfully created.' }
+        format.html { redirect_to @:token }
         format.json { render json: @jam, status: :created, location: @jam }
       else
         format.html { render action: "new" }
@@ -76,7 +76,7 @@ class JamsController < ApplicationController
     @jam.destroy
 
     respond_to do |format|
-      format.html { redirect_to jams_url }
+      format.html { redirect_to "pages#home"" }
       format.json { head :no_content }
     end
   end
