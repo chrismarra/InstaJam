@@ -16,7 +16,7 @@ class PhotoUploader < CarrierWave::Uploader::Base
 
   # Override the directory where uploaded files will be stored.
   def store_dir
-    "Instajam"
+    "instajam"
   end
 
   # Process files as they are uploaded:
