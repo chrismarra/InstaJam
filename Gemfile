@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 
 gem 'carrierwave'
-gem 'bootstrap-sass'
 gem 'mini_magick'
 
 # Gems used only for assets and not required
