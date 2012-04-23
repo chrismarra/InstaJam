@@ -1,5 +1,14 @@
-<p id="notice"><%= notice %></p>
-
-
-<%= link_to 'Edit', edit_jam_path(@jam) %> |
-<%= link_to 'Back', jams_path %>
+<p>
+  <b>Token:</b>
+  <%= @jam.token %>
+</p>
+ 
+<p>
+  <b>Photo.Orig:</b>
+  <%= image_tag(@jam.photo.url, :alt => "") %>
+</p>
+	
+<p>
+  <b>Photo.Jam:</b>
+  <%= image_tag(@jam.photo.instajam.url, :alt => "") %>
+</p>

@@ -1,15 +1,9 @@
 Instajam::Application.routes.draw do
-  
-  get "pages/home"
 
   root :to => 'pages#home'
-  match ":token" => "pages#show"
   
-  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+  match "/jams" => "jams#create"
+  match "/jam/:token" => "jams#show"
 
-  devise_for :admins
-
-  resources :jams
-  
 
 end
